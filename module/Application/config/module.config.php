@@ -92,13 +92,7 @@ return array(
             'Application\Form\DemoFieldset' => 'Application\Form\DemoFieldset'
         ),
         'initializers' => array(
-            'GreatServiceInitializer' => function($element, $formElements) {
-                    if ($element instanceof \Application\Service\GreatServiceAwareInterface) {
-                        $serviceLocator = $formElements->getServiceLocator();
-                        $greatService = $serviceLocator->get('GreatService');
-                        $element->setGreatService($greatService);
-                    }
-                }
+            'GreatServiceInitializer' => 'Application\Initializer\GreatServiceInitializer',
         ),
     ),
     'view_manager' => array(
