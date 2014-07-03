@@ -12,7 +12,7 @@ class DemoFormTwo extends Form
         $this->setAttribute('method', 'post')->setInputFilter(new InputFilter());
 
         $this->add(array(
-            'name' => 'vehicle',
+            'name' => 'demo_fieldset',
             'type' => 'Application\Form\DemoFieldset'
         ));
 
