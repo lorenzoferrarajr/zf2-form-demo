@@ -92,7 +92,7 @@ return array(
             'Application\Form\DemoFieldset' => 'Application\Form\DemoFieldset'
         ),
         'initializers' => array(
-            'GreatServiceInitializer' => 'Application\Initializer\GreatServiceInitializer',
+            'Application\Initializer\GreatServiceInitializer',
         ),
     ),
     'view_manager' => array(
