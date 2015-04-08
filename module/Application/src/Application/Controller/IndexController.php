@@ -56,4 +56,13 @@ class IndexController extends AbstractActionController
             'form' => $form
         );
     }
+
+    public function testFormWithDivElementAction()
+    {
+        $form = new \DivFormElement\Form\FormWithDivElement();
+
+        return array(
+            'form' => $form
+        );
+    }
 }
